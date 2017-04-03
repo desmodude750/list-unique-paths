@@ -44,7 +44,7 @@
                 <!-- variable to stow non-basic latin text -->
                 <xsl:variable name="all-text-with-nonBasicLatin">
                     <!-- get all nodes with non-basic latin characters -->
-                    <xsl:for-each select="*//text()[not(ancestor::mepHeader)][matches(., '[\P{IsBasicLatin}]')]">
+                    <xsl:for-each select="*//text()[matches(., '[\P{IsBasicLatin}]')]">
                         <!-- filter out the basic latin, put spaces between non-basics so they can be tokenized -->
                         <xsl:for-each
                             select="replace(replace(., '[\p{IsBasicLatin}]', ''), '([\P{IsBasicLatin}])', '$1 ')">
