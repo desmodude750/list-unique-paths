@@ -8,8 +8,8 @@
     -->
     
     <!-- tab character -->
-    <xsl:variable name="tab">&#x0009;</xsl:variable>
-    <xsl:variable name="re">&#x000D;&#x000A;</xsl:variable>
+    <xsl:variable name="tab"><xsl:text>&#x0009;</xsl:text></xsl:variable>
+    <xsl:variable name="re"><xsl:text>&#x000D;&#x000A;</xsl:text></xsl:variable>
     
     <!-- parameter to turn on checking of non-basic latin characters -->
     <xsl:param name="check-characters"/>
